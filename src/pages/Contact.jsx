@@ -1,4 +1,4 @@
-import "../pages/Pages.css";
+import "../pages/Gallery.css";
 
 const Contact = () => {
   return (

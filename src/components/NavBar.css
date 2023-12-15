@@ -5,12 +5,13 @@ body {
 }
 
 .header {
-  background-color: #e5e7e6;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 0;
   align-items: center;
   color: white;
+  overflow: hidden;
 }
 .head-menu {
   gap: 2em;
@@ -27,5 +28,21 @@ body {
 }
 
 .Logo1 {
-  width: 20%;
+  width: 90px;
+  animation: logoSpin 5s linear infinite;
+  transition: 1s;
+}
+
+.Logo1:hover {
+  width: 90px;
+  animation: logoSpin 2s linear infinite;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
